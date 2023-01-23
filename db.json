@@ -2,143 +2,328 @@
     "movies": [
         {
             "id": 1,
-            "title": "",
-            "poster": "",
+            "title": "Dark Knight",
+            "year": "2008",
+            "poster": "./images/dark knight.jpg",
             "price": "",
-            "likes": "10"
+            "genres": "Action"
         },
         {
             "id": 2,
-            "title": "",
-            "poster": "",
+            "title": "Kingsman: The Secret Service",
+            "year": "2014",
+            "poster": "./images/kingsman.jpg",
             "price": "",
-            "likes": "20"
+            "genres": "Action"
         },
         {
             "id": 3,
-            "title": "",
-            "poster": "",
+            "title": "Bullet Train",
+            "year": "2022",
+            "poster": "./images/bullettrain.jpg",
             "price": "",
-            "likes": "30"
+            "genres": "Action"
         },
         {
             "id": 4,
-            "title": "",
-            "poster": "",
+            "title": "The Batman",
+            "year": "2022",
+            "poster": "./images/batman.jpg",
             "price": "",
-            "likes": "20"
+            "genres": "Action"
         },
         {
             "id": 5,
-            "title": "",
-            "poster": "",
+            "title": "Skyfall",
+            "year": "2012",
+            "poster": "./images/skyfall.jpg",
             "price": "",
-            "likes": "10"
+            "genres": "Action"
         },
         {
             "id": 6,
-            "title": "",
-            "poster": "",
+            "title": "Trolls",
+            "year": "2016",
+            "poster": "./images/trolls.jpg",
             "price": "",
-            "likes": "80"
+            "genres": "Cartoon"
         },
         {
             "id": 7,
-            "title": "",
-            "poster": "",
+            "title": "Sing ",
+            "year": "2016",
+            "poster": "./images/sing.jpg",
             "price": "",
-            "likes": "10"
+            "genres": "Cartoon"
         },
         {
             "id": 8,
-            "title": "",
-            "poster": "",
+            "title": "Vivo ",
+            "year": "2021",
+            "poster": "./images/vivo.jpg",
             "price": "",
-            "likes": "300"
+            "genres": "Cartoon"
         },
         {
             "id": 9,
-            "title": "",
-            "poster": "",
+            "title": "Brave",
+            "year": "2012",
+            "poster": "./images/brave.jpg",
             "price": "",
-            "likes": "30"
+            "genres": "Cartoon"
         },
         {
             "id": 10,
-            "title": "",
-            "poster": "",
+            "title": "Tangled",
+            "year": "2010",
+            "poster": "./images/tangled.jpg",
             "price": "",
-            "likes": "10"
+            "genres": "Cartoon"
         },
         {
             "id": 11,
-            "title": "",
-            "poster": "",
+            "title": "Hangover",
+            "year": "2009",
+            "poster": "./images/hangover.jpg",
             "price": "",
-            "likes": "50"
+            "genres": "Comedy"
         },
         {
             "id": 12,
-            "title": "",
-            "poster": "",
+            "title": "Vacation",
+            "year": "2015",
+            "poster": "./images/vacation.jpg",
             "price": "",
-            "likes": "40"
+            "genres": "Comedy"
         },
         {
             "id": 13,
-            "title": "",
-            "poster": "",
+            "title": "We're Miller's",
+            "year": "2013",
+            "poster": "./images/we are millers.jpg",
             "price": "",
-            "likes": "30"
+            "genres": "Comedy"
         },
         {
             "id": 14,
-            "title": "",
-            "poster": "",
+            "title": "Murder Mystery",
+            "year": "2019",
+            "poster": "./images/murder mistery.jpg",
             "price": "",
-            "likes": "40"
+            "genres": "Comedy"
         },
         {
             "id": 15,
-            "title": "",
-            "poster": "",
+            "title": "The Other Woman",
+            "year": "2014",
+            "poster": "./images/the_other_woman.jpg",
             "price": "",
-            "likes": "80"
+            "genres": "Comedy"
         },
         {
             "id": 16,
-            "title": "",
-            "poster": "",
+            "title": "Bronx Tale",
+            "year": "2014",
+            "poster": "./images/bronx tale.jpg",
             "price": "",
-            "likes": "100"
+            "genres": "Crime"
         },
         {
             "id": 17,
-            "title": "",
-            "poster": "",
+            "title": "Casino",
+            "year": "2014",
+            "poster": "./images/casino.jpg",
             "price": "",
-            "likes": "120"
+            "genres": "Crime"
         },
         {
             "id": 18,
-            "title": "",
-            "poster": "",
+            "title": "GoodFellas",
+            "year": "2014",
+            "poster": "./images/goodfellas.jpg",
             "price": "",
-            "likes": "45"
+            "genres": "Crime"
         },
         {
             "id": 19,
-            "title": "",
-            "poster": "",
+            "title": "Lord of War ",
+            "year": "2005",
+            "poster": "./images/lordofwar.jpg",
             "price": "",
-            "likes": "67"
+            "genres": "Crime"
         },
         {
             "id": 20,
-            "title": "",
-            "poster": "",
+            "title": "Legend",
+            "year": "2015",
+            "poster": "./images/legend.jpg",
             "price": "",
-            "likes": "80"
+            "genres": "Crime"
+        },
+        {
+            "id": 21,
+            "title": "Beautiful Mind",
+            "year": "2014",
+            "poster": "./images/beautiful mind.jpg",
+            "price": "",
+            "genres": "Drama"
+        },
+        {
+            "id": 22,
+            "title": "Leon",
+            "year": "1994",
+            "poster": "./images/leon.jpg",
+            "price": "",
+            "genres": "Drama"
+        },
+        {
+            "id": 23,
+            "title": "The Stoning of Soraya M",
+            "year": "2008",
+            "poster": "./images/stoning_of_soraya_m.jpg",
+            "price": "",
+            "genres": "Drama"
+        },
+        {
+            "id": 24,
+            "title": "The Good Nurse",
+            "year": "2022",
+            "poster": "./images/good_nurse.jpg",
+            "price": "",
+            "genres": "Drama"
+        },
+        {
+            "id": 25,
+            "title": "The Danish Girl",
+            "year": "2015",
+            "poster": "./images/danish_girl.jpg",
+            "price": "",
+            "genres": "Drama"
+        },
+        {
+            "id": 26,
+            "title": "Stonehearst Asylum",
+            "year": "2014",
+            "poster": "./images/eliza graves.jpg",
+            "price": "",
+            "genres": "Thriller"
+        },
+        {
+            "id": 27,
+            "title": "Joker",
+            "year": "2019",
+            "poster": "./images/joker.jpg",
+            "price": "",
+            "genres": "Thriller"
+        },
+        {
+            "id": 28,
+            "title": "Shutter Island ",
+            "year": "2010",
+            "poster": "./images/shutter island .jpg",
+            "price": "",
+            "genres": "Thriller"
+        },
+        {
+            "id": 29,
+            "title": "Bird Box",
+            "year": "2018",
+            "poster": "./images/bird box.jpg",
+            "price": "",
+            "genres": "Thriller"
+        },
+        {
+            "id": 30,
+            "title": "Split",
+            "year": "2016",
+            "poster": "./images/bird box.jpg",
+            "price": "",
+            "genres": "Thriller"
+        },
+        {
+            "id": 31,
+            "title": "Apocalypto",
+            "year": "2006",
+            "poster": "./images/apocalypto.jpg",
+            "price": "",
+            "genres": "History"
+        },
+        {
+            "id": 32,
+            "title": "Braveheart",
+            "year": "1995",
+            "poster": "./images/braveheart.jpg",
+            "price": "",
+            "genres": "History"
+        },
+        {
+            "id": 33,
+            "title": "Kingdom Of Heaven",
+            "year": "2005",
+            "poster": "./images/kingdom of heaven.jpg",
+            "price": "",
+            "genres": "History"
+        },
+        {
+            "id": 34,
+            "title": "Schindler's List ",
+            "year": "1993",
+            "poster": "./images/shindler's_list.jpg",
+            "price": "",
+            "genres": "History"
+        },
+        {
+            "id": 35,
+            "title": "Munich",
+            "year": "2005",
+            "poster": "./images/prometehus.jpg",
+            "price": "",
+            "genres": "History"
+        },
+        {
+            "id": 36,
+            "title": "Avatar",
+            "year": "2014",
+            "poster": "./images/avatar.jpg",
+            "price": "",
+            "likes": "10",
+            "genres": "Sci-fi"
+        },
+        {
+            "id": 37,
+            "title": "Prometheus",
+            "year": "2014",
+            "poster": "./images/prometehus.jpg",
+            "price": "",
+            "likes": "67",
+            "genres": "Sci-fi"
+        },
+        {
+            "id": 38,
+            "title": "What Happened to Monday",
+            "year": "2014",
+            "poster": "./images/7sisters.jpg",
+            "price": "",
+            "likes": "80",
+            "genres": "Sci-fi"
+        },
+        {
+            "id": 39,
+            "title": "Dune",
+            "year": "2014",
+            "poster": "./images/dune.jpg",
+            "price": "",
+            "likes": "80",
+            "genres": "Sci-fi"
+        },
+        {
+            "id": 40,
+            "title": "Morbius",
+            "year": "2014",
+            "poster": "./images/morbius.jpg",
+            "price": "",
+            "likes": "80",
+            "genres": "Sci-fi"
         }
     ]
 }
