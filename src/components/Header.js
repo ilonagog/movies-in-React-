@@ -9,16 +9,20 @@ function Header({ isDarkMode, onToggleDarkMode }) {
         <header>
             <nav>
                 <h1 className="branding">
-                    <span className="logo">{"//"}</span>
+                    <span className="logo">{""}</span>
                     Home
                 </h1>
                 <div className="navigation">
                     <a className="button" href="/movies">
                         Movies
                     </a>
+                    <a className="button" href="/genres">
+                        Genres
+                    </a>
                     <a className="button" href="/movies/new">
                         Add Movies
                     </a>
+
                     <button onClick={onToggleDarkMode}>{buttonTextContent}</button>
                 </div>
             </nav>

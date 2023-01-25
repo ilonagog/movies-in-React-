@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './components/Home';
 
 import Genres from './components/Genres';
-import Movies from './components/Movies';
+
 import Header from './components/Header';
 
 import MovieList from './components/MovieList';
@@ -11,10 +11,14 @@ import MovieList from './components/MovieList';
 
 
 function App() {
-
+  const [movies, setMovies] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
-
+  useEffect(() => {
+    fetch(" http://localhost:3000/movies")
+      .then((r) => r.json())
+      .then(setMovies)
+  }, [])
 
   const onToggleDarkMode = () => {
     setIsDarkMode((isDarkMode) => !isDarkMode);
@@ -27,8 +31,8 @@ function App() {
       <Home />
 
       <Genres />
-      <Movies />
-      <MovieList />
+
+      <MovieList movies={movies} />
 
 
     </div>

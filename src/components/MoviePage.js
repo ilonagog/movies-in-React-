@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import MovieList from "./MovieList";
 //import NewMovieForm from "./NewMovieForm";
 
 
-function MoviePage() {
+function MoviePage({ movies }) {
 
 
     return (
         <div>
 
 
-            <MovieList />
+            <MovieList movies={movies} />
         </div>
     )
 }

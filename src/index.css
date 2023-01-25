@@ -327,3 +327,7 @@ header h1 a:hover {
   display: block;
   margin-bottom: 2rem;
 }
+
+h2 {
+  color: #00efe1;
+}
