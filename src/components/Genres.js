@@ -1,10 +1,10 @@
 import React from 'react'
 
-function NavBar() {
+function Genres() {
     return (
         <div>
 
         </div>
     )
 }
-export default NavBar;
+export default Genres;

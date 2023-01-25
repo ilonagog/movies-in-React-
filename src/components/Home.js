@@ -1,11 +1,12 @@
 import React from 'react'
 
-function MovieCard() {
+function Home() {
     return (
-        <div >
-
+        <div>
 
         </div>
     )
 }
-export default MovieCard;
+export default Home;
+
+
