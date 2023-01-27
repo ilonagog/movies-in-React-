@@ -125,7 +125,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
+
+
 }
+
+.branding img {
+  width: 5%;
+  height: 10%;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
 
 .logo {
   color: var(--turquoise);
