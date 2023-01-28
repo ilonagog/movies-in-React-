@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MoviePage from './MoviePage';
 
+function MovieList({ movies }) {
 
+    const movieListPage = movies.map(movie =>
+        <MoviePage movie={movie} key={movie.id} />
+    )
 
-
-function MovieList() {
-
-    return
-
-
-
+    return (
+        <ul className='cards'>
+            {movieListPage}
+        </ul>
+    )
 }
 export default MovieList;

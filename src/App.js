@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 //import { Route, Switch } from "react-router-dom";
 import Home from './components/Home';
-
-import Genres from './components/Genres';
-
 import Header from './components/Header';
 import NewMovieForm from './components/NewMovieForm';
-
 import MovieList from './components/MovieList';
 
 
@@ -18,33 +14,28 @@ function App() {
 
 
 
-  useEffect(() => {
-    fetch(" http://localhost:3000/movies")
-      .then((r) => r.json())
-      .then(setMovies)
-  }, [])
-
   const handleClick = () => {
-    console.log()
-  }
+    fetch(" http://localhost:4000/movies")
+      .then((r) => r.json())
+      .then((movies) => setMovies(movies));
+  };
 
+  console.log(movies)
 
   const onToggleDarkMode = () => {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
-  const addMovies = (newMovie) => {
-    setMovies((movieObj) => [...movieObj, newMovie])
-  }
-  console.log(movies)
-
+  //console.log(movies)
 
   return (
     <div className={isDarkMode ? "App" : "App light"}>
       <Header isDarkMode={isDarkMode} onToggleDarkMode={onToggleDarkMode} />
-      <NewMovieForm addMovies={addMovies} />
+      <NewMovieForm />
       <Home />
-      <MovieList movies={movies} onClick={handleClick} />
+      <button onClick={handleClick}>View All Movies</button>
+
+      <MovieList movies={movies} />
 
 
 

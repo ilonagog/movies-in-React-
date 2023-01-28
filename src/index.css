@@ -65,6 +65,10 @@ section {
   align-items: center;
 }
 
+h3 {
+  color: #e80352;
+}
+
 /* buttons */
 button {
   padding: 0.5rem 0.75rem;
@@ -232,19 +236,7 @@ select:focus {
   object-fit: cover;
 }
 
-.card .image .claps {
-  color: transparent;
-  text-shadow: 0 0 0 var(--turquoise);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 
-.card .image .claps:focus,
-.card .image .claps:hover {
-  color: transparent;
-  text-shadow: 0 0 0 var(--color);
-}
 
 .card .details {
   margin: 0.5rem;
@@ -262,18 +254,7 @@ select:focus {
   margin-top: auto;
 }
 
-.badge {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  margin: 0.25rem;
-}
 
-.badge.blue {
-  background-color: var(--blue);
-  border: 2px solid var(--blue-dark);
-  color: var(--white);
-}
 
 .box {
   border: 2px solid var(--dark-turquoise);
@@ -340,5 +321,5 @@ header h1 a:hover {
 }
 
 h2 {
-  color: #00efe1;
+  color: darkcyan;
 }
