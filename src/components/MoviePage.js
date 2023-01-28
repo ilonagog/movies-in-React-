@@ -7,7 +7,7 @@ function MoviePage({ movie }) {
 
         <li className='card'>
             <figure className="image">
-                <img src={movie.image} alt={movie.image} />
+                <img src={movie.poster} alt={movie.poster} />
             </figure>
             <section className="details">
                 <h3>{movie.title}</h3>

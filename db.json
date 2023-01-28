@@ -4,280 +4,280 @@
             "id": 1,
             "title": "Dark Knight",
             "year": "2008",
-            "image": "./images/dark knight.jpg",
+            "poster": "./images/dark knight.jpg",
             "genre": "Action"
         },
         {
             "id": 2,
             "title": "Kingsman: The Secret Service",
             "year": "2014",
-            "image": "./images/kingsman.jpg",
+            "poster": "./images/kingsman.jpg",
             "genre": "Action"
         },
         {
             "id": 3,
             "title": "Bullet Train",
             "year": "2022",
-            "image": "./images/bullettrain.jpg",
+            "poster": "./images/bullettrain.jpg",
             "genre": "Action"
         },
         {
             "id": 4,
             "title": "The Batman",
             "year": "2022",
-            "image": "./images/batman.jpg",
+            "poster": "./images/batman.jpg",
             "genre": "Action"
         },
         {
             "id": 5,
             "title": "Skyfall",
             "year": "2012",
-            "image": "./images/skyfall.jpg",
+            "poster": "./images/skyfall.jpg",
             "genre": "Action"
         },
         {
             "id": 6,
             "title": "Trolls",
             "year": "2016",
-            "image": "./images/trolls.jpg",
+            "poster": "./images/trolls.jpg",
             "genre": "Cartoon"
         },
         {
             "id": 7,
             "title": "Sing ",
             "year": "2016",
-            "image": "./images/sing.jpg",
+            "poster": "./images/sing.jpg",
             "genre": "Cartoon"
         },
         {
             "id": 8,
             "title": "Vivo ",
             "year": "2021",
-            "image": "./images/vivo.jpg",
+            "poster": "./images/vivo.jpg",
             "genre": "Cartoon"
         },
         {
             "id": 9,
             "title": "Brave",
             "year": "2012",
-            "image": "./images/brave.jpg",
+            "poster": "./images/brave.jpg",
             "genre": "Cartoon"
         },
         {
             "id": 10,
             "title": "Tangled",
             "year": "2010",
-            "image": "./images/tangled.jpg",
+            "poster": "./images/tangled.jpg",
             "genre": "Cartoon"
         },
         {
             "id": 11,
             "title": "Hangover",
             "year": "2009",
-            "image": "./images/hangover.jpg",
+            "poster": "./images/hangover.jpg",
             "genre": "Comedy"
         },
         {
             "id": 12,
             "title": "Vacation",
             "year": "2015",
-            "image": "./images/vacation.jpg",
+            "poster": "./images/vacation.jpg",
             "genre": "Comedy"
         },
         {
             "id": 13,
             "title": "We're Miller's",
             "year": "2013",
-            "image": "./images/we are millers.jpg",
+            "poster": "./images/we are millers.jpg",
             "genre": "Comedy"
         },
         {
             "id": 14,
             "title": "Murder Mystery",
             "year": "2019",
-            "image": "./images/murder mystery .jpg",
+            "poster": "./images/murder mystery .jpg",
             "genre": "Comedy"
         },
         {
             "id": 15,
             "title": "The Other Woman",
             "year": "2014",
-            "image": "./images/the_other_woman.jpg",
+            "poster": "./images/the_other_woman.jpg",
             "genre": "Comedy"
         },
         {
             "id": 16,
             "title": "Bronx Tale",
             "year": "2014",
-            "image": "./images/bronx tale.jpg",
+            "poster": "./images/bronx tale.jpg",
             "genre": "Crime"
         },
         {
             "id": 17,
             "title": "Casino",
             "year": "2014",
-            "image": "./images/casino.jpg",
+            "poster": "./images/casino.jpg",
             "genres": "Crime"
         },
         {
             "id": 18,
             "title": "GoodFellas",
             "year": "2014",
-            "image": "./images/goodfellas.jpg",
+            "poster": "./images/goodfellas.jpg",
             "genre": "Crime"
         },
         {
             "id": 19,
             "title": "Lord of War ",
             "year": "2005",
-            "image": "./images/lordofwar.jpg",
+            "poster": "./images/lordofwar.jpg",
             "genre": "Crime"
         },
         {
             "id": 20,
             "title": "Legend",
             "year": "2015",
-            "image": "./images/legend.jpg",
+            "poster": "./images/legend.jpg",
             "genre": "Crime"
         },
         {
             "id": 21,
             "title": "Beautiful Mind",
             "year": "2014",
-            "image": "./images/beautiful mind.jpg",
+            "poster": "./images/beautiful mind.jpg",
             "genre": "Drama"
         },
         {
             "id": 22,
             "title": "Leon",
             "year": "1994",
-            "image": "./images/leon.jpg",
+            "poster": "./images/leon.jpg",
             "genre": "Drama"
         },
         {
             "id": 23,
             "title": "The Stoning of Soraya M",
             "year": "2008",
-            "image": "./images/stoning_of_soraya_m.jpg",
+            "poster": "./images/stoning_of_soraya_m.jpg",
             "genre": "Drama"
         },
         {
             "id": 24,
             "title": "The Good Nurse",
             "year": "2022",
-            "image": "./images/good_nurse.jpg",
+            "poster": "./images/good_nurse.jpg",
             "genre": "Drama"
         },
         {
             "id": 25,
             "title": "The Danish Girl",
             "year": "2015",
-            "image": "./images/danish_girl.jpg",
+            "poster": "./images/danish_girl.jpg",
             "genre": "Drama"
         },
         {
             "id": 26,
             "title": "Stonehearst Asylum",
             "year": "2014",
-            "image": "./images/eliza graves.jpg",
+            "poster": "./images/eliza graves.jpg",
             "genre": "Thriller"
         },
         {
             "id": 27,
             "title": "Joker",
             "year": "2019",
-            "image": "./images/joker.jpg",
+            "poster": "./images/joker.jpg",
             "genre": "Thriller"
         },
         {
             "id": 28,
             "title": "Shutter Island ",
             "year": "2010",
-            "image": "./images/shutter island.jpg",
+            "poster": "./images/shutter island.jpg",
             "genre": "Thriller"
         },
         {
             "id": 29,
             "title": "Bird Box",
             "year": "2018",
-            "image": "./images/bird box.jpg",
+            "poster": "./images/bird box.jpg",
             "genre": "Thriller"
         },
         {
             "id": 30,
             "title": "Split",
             "year": "2016",
-            "image": "./images/split.jpg",
+            "poster": "./images/split.jpg",
             "genre": "Thriller"
         },
         {
             "id": 31,
             "title": "Apocalypto",
             "year": "2006",
-            "image": "./images/apocalypto.jpg",
+            "poster": "./images/apocalypto.jpg",
             "genre": "History"
         },
         {
             "id": 32,
             "title": "Braveheart",
             "year": "1995",
-            "image": "./images/braveheart.jpg",
+            "poster": "./images/braveheart.jpg",
             "genre": "History"
         },
         {
             "id": 33,
             "title": "Kingdom Of Heaven",
             "year": "2005",
-            "image": "./images/kingdom of heaven.jpg",
+            "poster": "./images/kingdom of heaven.jpg",
             "genre": "History"
         },
         {
             "id": 34,
             "title": "Schindler's List ",
             "year": "1993",
-            "image": "./images/shindler's_list.png",
+            "poster": "./images/shindler's_list.png",
             "genre": "History"
         },
         {
             "id": 35,
             "title": "Munich",
             "year": "2005",
-            "image": "./images/munich.jpg",
+            "poster": "./images/munich.jpg",
             "genre": "History"
         },
         {
             "id": 36,
             "title": "Avatar",
             "year": "2014",
-            "image": "./images/avatar.jpg",
+            "poster": "./images/avatar.jpg",
             "genre": "Sci-fi"
         },
         {
             "id": 37,
             "title": "Prometheus",
             "year": "2014",
-            "image": "./images/prometheus.jpg",
+            "poster": "./images/prometheus.jpg",
             "genre": "Sci-fi"
         },
         {
             "id": 38,
             "title": "What Happened to Monday",
             "year": "2014",
-            "image": "./images/7sisters.jpg",
+            "poster": "./images/7sisters.jpg",
             "genre": "Sci-fi"
         },
         {
             "id": 39,
             "title": "Dune",
             "year": "2014",
-            "image": "./images/dune.jpg",
+            "poster": "./images/dune.jpg",
             "genre": "Sci-fi"
         },
         {
             "id": 40,
             "title": "Morbius",
             "year": "2014",
-            "image": "./images/morbius.jpg",
+            "poster": "./images/morbius.jpg",
             "genre": "Sci-fi"
         }
     ]
