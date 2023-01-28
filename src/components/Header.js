@@ -22,6 +22,10 @@ function Header({ isDarkMode, onToggleDarkMode }) {
                     <a className="button" href="/movies/new">
                         Add Movies
                     </a>
+                    <a className="button" href="/favorites">
+                        Favorites
+                    </a>
+                    <input type="text" placeholder="Search....    🔍" />
 
                     <button onClick={onToggleDarkMode}>{buttonTextContent}</button>
                 </div>

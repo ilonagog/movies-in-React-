@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Header from './components/Header';
 import NewMovieForm from './components/NewMovieForm';
 import MovieList from './components/MovieList';
+import Genres from './components/Genres';
 
 
 
@@ -31,9 +32,10 @@ function App() {
   return (
     <div className={isDarkMode ? "App" : "App light"}>
       <Header isDarkMode={isDarkMode} onToggleDarkMode={onToggleDarkMode} />
+      <Genres />
       <NewMovieForm />
       <Home />
-      <button onClick={handleClick}>View All Movies</button>
+      <button className="trending" onClick={handleClick}>Trending Movies</button>
 
       <MovieList movies={movies} />
 

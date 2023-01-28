@@ -14,11 +14,10 @@ function NewMovieForm() {
                 <label htmlFor="poster">Poster</label>
                 <input type="" id="poster" poster="poster" />
 
-                <label htmlFor="price">Price</label>
-                <input type="" id="price" price="price" />
                 <label htmlFor="genre">Genre</label>
                 <input type="" id="genre" genre="genre" />
-                <button type="submit">Add Movie</button>
+
+                <button className="submit" type="submit">Add Movie</button>
 
             </form>
         </section>
