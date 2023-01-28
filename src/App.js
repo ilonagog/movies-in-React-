@@ -27,13 +27,17 @@ function App() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
+  const addNewMovie = (newMovie) => {
+    setMovies((movie) => [...movie, newMovie])
+  }
+
   //console.log(movies)
 
   return (
     <div className={isDarkMode ? "App" : "App light"}>
       <Header isDarkMode={isDarkMode} onToggleDarkMode={onToggleDarkMode} />
       <Genres />
-      <NewMovieForm />
+      <NewMovieForm addNewMovie={addNewMovie} />
       <Home />
       <button className="trending" onClick={handleClick}>Trending Movies</button>
 

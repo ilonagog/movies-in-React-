@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function NewMovieForm() {
+function NewMovieForm({ addNewMovie }) {
+
+    const [] = useState()
     return (
         <section>
             <form className='form'>
