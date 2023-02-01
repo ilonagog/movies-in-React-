@@ -15,10 +15,18 @@ function MovieList({ movies }) {
 
     const handleChange = (e) => setSearch(e.target.value)
     return (
-        <ul className='cards'>
-            <input type="text" placeholder="Search....    🔍" onChange={handleChange} />
-            {movieListPage}
-        </ul>
+        <div>
+            <input type="text" id="search" placeholder="     Search....    🔍" onChange={handleChange} />
+
+            <ul className='cards'>
+                {movieListPage}
+            </ul>
+        </div>
+
     )
 }
 export default MovieList;
+
+//    Questions 
+
+// if i pass search callback to NavBar , whole NavBar is on MovieList box

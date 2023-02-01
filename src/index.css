@@ -13,9 +13,9 @@ code {
 }
 
 :root {
-  --turquoise: #00efe1;
-  --mid-turquoise: #14d5c9;
-  --dark-turquoise: #00333f;
+  --turquoise: #13c9bd;
+  --mid-turquoise: #161972;
+  --dark-turquoise: #458fa0;
   --black: #030416;
   --white: #f1f1f1;
   --grey: #d6e2e7;
@@ -32,6 +32,36 @@ code {
   --primary: var(--turquoise);
 }
 
+
+.movie-image img {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: rgb(13, 185, 185);
+}
+
+.heart {
+  border: none;
+  right: 1px;
+  bottom: 10px
+}
+
+.trending {
+  width: 30%;
+  height: 40px;
+
+}
+
+.star {
+  border: none;
+}
+
+
+
 /* layout */
 * {
   padding: 0;
@@ -41,6 +71,7 @@ code {
 
 body {
   font-family: "Fira Code", monospace;
+
   font-size: 16px;
   color: var(--color);
   background-color: var(--background);
@@ -66,7 +97,7 @@ section {
 }
 
 h3 {
-  color: #f1f1f1;
+  color: rgb(13, 185, 185);
 }
 
 /* buttons */
@@ -119,12 +150,7 @@ header {
 }
 
 
-.logo {
-  color: var(--turquoise);
-  font-size: 1.25em;
-  font-family: Helvetica;
-  margin-right: 0.5rem;
-}
+
 
 /* forms */
 .form {
@@ -160,6 +186,12 @@ select:focus {
   border: 2px solid var(--primary);
 }
 
+#search {
+  width: 30%;
+  height: 0%;
+  background-color: #bfede3;
+}
+
 .form button[type="submit"] {
   width: 100%;
   cursor: pointer;
@@ -179,7 +211,7 @@ select:focus {
 
 /* cards */
 .cards {
-  margin: 0 auto;
+  margin: 15px;
   list-style: none;
   width: 100%;
   display: grid;
@@ -283,36 +315,6 @@ header h1 a:hover {
   background-color: transparent;
 }
 
-.logo {
-  color: var(--turquoise);
-  font-size: 1.25em;
-  font-family: Helvetica;
-  margin-right: 0.5rem;
-}
-
-.movie-image img {
-  width: 100%;
-  max-width: 1000px;
-  display: block;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  color: darkcyan;
-}
-
-.heart {
-  border: none;
-  right: 1px;
-  bottom: 10px
-}
-
-.trending {
-  width: 100%;
-  height: 40px;
-
-}
-
-.star {
-  border: none;
+h1.branding {
+  display: flex;
 }

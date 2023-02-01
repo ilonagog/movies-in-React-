@@ -9,14 +9,39 @@ function NewMovieForm({ addNewMovie }) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-    }
 
-    const newMovie = {
-        title: newTitle,
-        year: newYear,
-        poster: newPoster,
-        genre: newGenre
+        e.target.reset();
+        // console.log(e)
+
+
+        const newMovie = {
+            title: newTitle,
+            year: newYear,
+            poster: newPoster,
+            genre: newGenre
+        }
+        console.log(newMovie)
+
+        fetch(" http://localhost:3000/movies", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify(newMovie)
+        })
+            .then((r) => r.json())
+            .then((movie) => addNewMovie(movie));
     }
+    // fetch(" http://localhost:3000/movies", {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-type": "application/json",
+    //     },
+    //     body: JSON.stringify(newMovie)
+    // })
+    //     .then((r) => r.json())
+    //     .then((movie) => addNewMovie(movie));
+
 
     return (
         <section>

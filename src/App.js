@@ -1,29 +1,47 @@
 import React, { useState } from 'react';
 import './App.css';
-//import { Route, Switch } from "react-router-dom";
-import Home from './components/Home';
-import Header from './components/Header';
+import { Route, Switch } from "react-router-dom";
+import NavBar from './components/NavBar';
 import NewMovieForm from './components/NewMovieForm';
 import MovieList from './components/MovieList';
 import Genres from './components/Genres';
 
 
 
+
 function App() {
+
+  //const [page, setPage] = useState("/")
+  // const [genres, setGenres] = useState([]);
   const [movies, setMovies] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
+  // console.log(genres)
+  //const [selectedGenre, setSelectedGenre] = useState("All")
+  console.log(movies)
 
 
   const handleClick = () => {
-    fetch(" http://localhost:4000/movies")
+    fetch(" http://localhost:3000/movies")
       .then((r) => r.json())
-      .then((movies) => setMovies(movies));
+      .then(setMovies)
+    //.then((genres) => setGenres(genres));
   };
 
-  console.log(movies)
 
-  const onToggleDarkMode = () => {
+  // const handleFilter = () => {
+  //   fetch(" http://localhost:3000/genres")
+  //     .then((r) => r.json())
+  //     .then(setGenres)
+  //   //.then((genres) => setGenres(genres));
+
+  // };
+  //console.log(genres)
+
+  //console.log(movies)
+  // console.log(genres)
+
+  const handleDarkMode = () => {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
@@ -33,37 +51,29 @@ function App() {
 
   //console.log(movies)
 
+
+  // const filteredGenres = movies.filter(movie => movie.genre === genres || genres === "All")
+
   return (
     <div className={isDarkMode ? "App" : "App light"}>
-      <Header isDarkMode={isDarkMode} onToggleDarkMode={onToggleDarkMode} />
-      <Genres />
-      <NewMovieForm addNewMovie={addNewMovie} />
-      <Home />
+      <NavBar isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
       <button className="trending" onClick={handleClick}>Trending Movies</button>
-
-      <MovieList movies={movies} />
-
-
-
-
-
-      {/* <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/movies">
-          <MovieList movies={movies} />
-        </Route>
-        <Route exact path="/genres">
+      <Switch>
+        <Route path="/genres">
           <Genres />
         </Route>
-        <Route exact path="/newMovieForm">
-          <NewMovieForm />
+        <Route path="/newmovieform">
+          <NewMovieForm addNewMovie={addNewMovie} />
         </Route>
-      </Switch> */}
+        <Route path="/">
+          <MovieList movies={movies} />
+        </Route>
+      </Switch>
+      {/* <button className="trending" onClick={handleClick}>Trending Movies</button> */}
 
     </div>
   );
 }
+
 
 export default App;
