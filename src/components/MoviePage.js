@@ -1,69 +1,77 @@
-import React, { useState } from 'react'
-//import NewMovieForm from './NewMovieForm'
-//import Genres from './Genres'
+import { useState } from 'react'
 
 
-function MoviePage({ movie }) {
+
+function MoviePage({ movie, onDeleteMovie, onUpdateMovie }) {
+    const { id, title, year, poster, genre } = movie;
     const [star, setStar] = useState(0)
 
+    const handleDeleteClick = () => {
+        fetch(`http://localhost:3000/movies/${id}`, {
+            method: "DELETE"
+        })
+            .then(res => res.json())
+            .then(() => onDeleteMovie(id))
+    };
+
     const handleClick = () => {
-        console.log("hi")
-        setStar(star + 1)
-
         const newStar =
-            fetch("http://localhost:3000/movies" + `/${movie.id}`,
-                {
-                    method: "PATCH",
-                    headers: {
-                        "Content-type": "application/json",
-                        Accept: "application/json",
-                    },
-                    body: JSON.stringify(newStar),
-                })
-                // fetch(`http://localhost:3000/movies/${id}`, newStar)
-                .then((res) => res.json())
-                .then((movie) => movie)
+            setStar(star + 1)
 
+        fetch(`http://localhost:3000/movies/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify(newStar),
+        })
+            .then((res) => res.json())
+            .then(onUpdateMovie);
 
-
-        // const handleClick = () => {
-        //     console.log("hi")
-        //     setStar(star + 1)
 
     }
-    // const handleClick = () => {
-    //     console.log("hi")
-    //     setStar(star + 1)
-    // const filteredButtons = genres.map(genre => (
-    //     <button
-    //         key={genre}
-    //         onClick={(e) => setSelectedGenre(genre)}
-    //         className={genre === selectedGenre ? "selected" : null}
-    //     >
-    //         {genre}
-    //     </button>
-    // ))
+
     return (
         <div>
-
-
-
             <li className='card'>
                 <figure className="image">
-                    <img src={movie.poster} alt={movie.poster} />
+                    <img src={poster} alt={poster} />
                 </figure>
                 <section className="details">
-                    <h3>{movie.title}</h3>
-                    <p>{movie.year}</p>
-                    <p>{movie.genre}</p>
+                    <h3>{title}</h3>
+                    <p>{year}</p>
+                    <p>{genre}</p>
                     <button className='heart'>💛</button>
                     <button className='star' onClick={handleClick}>⭐{star}</button>
-
                 </section>
+                <footer className='footer'>
+                    <div>
+                        <button className="delete" onClick={handleDeleteClick}>🚮</button>
+                    </div>
+                </footer>
             </li>
-            {/* <NewMovieForm movie={movie} /> */}
         </div>
 
     )
 }
 export default MoviePage;
+
+
+
+
+   //     const newStar =
+    //         fetch("http://localhost:3000/movies" + `/${movie.id}`,
+    //             {
+    //                 method: "PATCH",
+    //                 headers: {
+    //                     "Content-type": "application/json",
+    //                     Accept: "application/json",
+    //                 },
+    //                 body: JSON.stringify(newStar),
+    //             })
+    //             // fetch(`http://localhost:3000/movies/${id}`, newStar)
+    //             .then((res) => res.json())
+    //             .then((movie) => movie)
+
+    //         }

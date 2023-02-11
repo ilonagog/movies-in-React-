@@ -7,12 +7,15 @@ function NewMovieForm({ addNewMovie }) {
     const [newPoster, setNewPoster] = useState("")
     const [newGenre, setNewGenre] = useState("")
 
+    const resetForm = () => {
+        setNewTitle("")
+        setNewYear("")
+        setNewPoster("")
+        setNewGenre("")
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
-
-        e.target.reset();
-        // console.log(e)
-
 
         const newMovie = {
             title: newTitle,
@@ -20,7 +23,8 @@ function NewMovieForm({ addNewMovie }) {
             poster: newPoster,
             genre: newGenre
         }
-        console.log(newMovie)
+        // console.log(newMovie)
+
 
         fetch(" http://localhost:3000/movies", {
             method: "POST",
@@ -31,24 +35,19 @@ function NewMovieForm({ addNewMovie }) {
         })
             .then((r) => r.json())
             .then((movie) => addNewMovie(movie));
+        resetForm()
+
     }
-    // fetch(" http://localhost:3000/movies", {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-type": "application/json",
-    //     },
-    //     body: JSON.stringify(newMovie)
-    // })
-    //     .then((r) => r.json())
-    //     .then((movie) => addNewMovie(movie));
+
 
 
     return (
         <section>
-            <form className='form' onSubmit={handleSubmit}>
+            <form className='form' onSubmit={handleSubmit} >
                 <h3>Add New Movie</h3>
                 <label htmlFor="title">Title</label>
                 <input type="text" id="title" title="title" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} />
+
 
                 <label htmlFor="year">Year</label>
                 <input type="" id="year" year="year" value={newYear} onChange={(e) => setNewYear(e.target.value)} />

@@ -6,7 +6,6 @@ function NavBar({ isDarkMode, handleDarkMode }) {
     const buttonText = isDarkMode ? "Light Mode" : "Dark Mode";
 
     return (
-
         <header>
             <nav>
                 <div className="navigation">
@@ -17,7 +16,7 @@ function NavBar({ isDarkMode, handleDarkMode }) {
                             <img src="https://img.icons8.com/external-flat-glyph-papa-vector/2x/external-Home-ui-flat-glyph-papa-vector.png" alt="home" />
                         </h1>
                         <button className='button'>
-                            Movie
+                            Movies
                         </button>
                     </Link>
 

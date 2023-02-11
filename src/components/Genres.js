@@ -1,48 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import MoviePage from './MoviePage';
 
-function Genres() {
-    // const [selectedGenre, setSelectedGenre] = useState("All")
+function Genres({ movies }) {
+    const [genres, setGenres] = useState([])
+    const [selectedGenre, setSelectedGenre] = useState([])
 
-    // const filteredGenres = movies.filter(movie => movie.genre === selectedGenre || selectedGenre === "All")
-    // console.log(genre)
+    useEffect(() => {
+        fetch(" http://localhost:3000/genres")
+            .then(resp => resp.json())
+            .then(setGenres)
+    }, [])
 
-    // const click = (e) => {
-    //     console.log("hi")
-    // }
+    const moviesFilteredByGenres = movies.filter(movie => movie.genre === selectedGenre || selectedGenre === "All")
 
-    // const filteredButtons = genres.map(genre => (
+    const filteredButtons = genres.map(genre => (
 
-    //     <button
-    //         key={genre}
-    //         onClick={(e) => setSelectedGenre(genre)}
-    //         className={genre === selectedGenre ? "selected" : null}
-    //     >
-    //         {genre}
-    //     </button>
+        <button
+            key={genre}
+            onClick={(e) => setSelectedGenre(genre)}
+            className={genre === selectedGenre ? "selected" : null}
+        >
+            {genre}
+        </button>
 
 
-    // ))
-    //console.log(genres)
-    // console.log("")
+    ))
+
+
     return (
         <div>
             <section>
                 <h2>Genres</h2>
                 <div className="filter">
-                    <button onClick={(e) => { console.log("hi") }} >All</button>
-                    <button onClick={(e) => { console.log("hi") }}   >Action</button>
-                    <button onClick={(e) => { console.log("hi") }}  >Cartoon</button>
-                    <button onClick={(e) => { console.log("hi") }} >Comedy</button>
-                    <button onClick={(e) => { console.log("hi") }}   >Crime</button>
-                    <button onClick={(e) => { console.log("hi") }}   >Drama</button>
-                    <button onClick={(e) => { console.log("hi") }}   >History</button>
-                    <button onClick={(e) => { console.log("hi") }}   >Sci-Fi</button>
-                    <button onClick={(e) => { console.log("hi") }}   >Thriller</button>
-                    {/* {filteredButtons} */}
-
-                    {/* {filteredGenres} */}
+                    <button  >All</button>
+                    <button   >Action</button>
+                    <button  >Cartoon</button>
+                    <button >Comedy</button>
+                    <button  >Crime</button>
+                    <button  >Drama</button>
+                    <button  >History</button>
+                    <button  >Sci-Fi</button>
+                    <button   >Thriller</button>
+                    {filteredButtons}
+                    {moviesFilteredByGenres}
                 </div>
             </section>
+            <MoviePage />
         </div>
     )
 }

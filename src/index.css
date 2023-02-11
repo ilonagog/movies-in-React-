@@ -60,6 +60,11 @@ h2 {
   border: none;
 }
 
+.delete {
+  border: none;
+
+}
+
 
 
 /* layout */
@@ -187,9 +192,19 @@ select:focus {
 }
 
 #search {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
   width: 30%;
   height: 0%;
-  background-color: #bfede3;
+  background-color: #d0d8d3;
+  color: #030416;
+}
+
+::placeholder {
+
+
+  color: black
 }
 
 .form button[type="submit"] {
@@ -223,7 +238,7 @@ select:focus {
   max-width: 400px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  border: 2px solid var(--dark-turquoise);
+
 }
 
 @media screen and (max-width: 588px) {
@@ -266,7 +281,7 @@ select:focus {
 
 
 .box {
-  border: 2px solid var(--dark-turquoise);
+
   padding: 1.75rem;
 }
 
