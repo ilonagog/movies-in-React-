@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 
 
-function MoviePage({ movie, onDeleteMovie, onUpdateMovie }) {
-    const { id, title, year, poster, genre } = movie;
+function MoviePage({ movie, genre, onDeleteMovie, onUpdateMovie }) {
+    const { id, title, year, poster } = movie;
     const [star, setStar] = useState(0)
 
     const handleDeleteClick = () => {

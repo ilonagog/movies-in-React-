@@ -10,7 +10,7 @@ function MovieList({ movies, onDeleteMovie }) {
     })
 
     const movieListPage = searchResults.map(movie =>
-        <MoviePage movie={movie} key={movie.id} onDeleteMovie={onDeleteMovie} />
+        <MoviePage movie={movie} key={movie.id} genre={movie.genre} onDeleteMovie={onDeleteMovie} />
     )
 
     const handleChange = (e) => setSearch(e.target.value)

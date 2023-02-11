@@ -1,38 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import MoviePage from './MoviePage';
+import React from 'react';
+//import MoviePage from './MoviePage';
 
-function Genres({ movies }) {
-    const [genres, setGenres] = useState([])
-    const [selectedGenre, setSelectedGenre] = useState([])
+function Genres({ genres, selectedGenre, setSelectedGenre }) {
+    // const [genres, setGenres] = useState([])
+    //const [selectedGenre, setSelectedGenre] = useState("All")
 
-    useEffect(() => {
-        fetch(" http://localhost:3000/genres")
-            .then(resp => resp.json())
-            .then(setGenres)
-    }, [])
+    // useEffect(() => {
+    //     fetch(" http://localhost:3000/genres")
+    //         .then(resp => resp.json())
+    //         .then(data => setGenres(data))
+    // }, [])
+    // console.log(genres)
 
-    const moviesFilteredByGenres = movies.filter(movie => movie.genre === selectedGenre || selectedGenre === "All")
+    const filteredButtons = genres.map((genre) => (
 
-    const filteredButtons = genres.map(genre => (
 
         <button
             key={genre}
             onClick={(e) => setSelectedGenre(genre)}
-            className={genre === selectedGenre ? "selected" : null}
-        >
+            className={genre === selectedGenre ? "selected" : null}>
             {genre}
         </button>
 
+    ));
 
-    ))
 
 
     return (
         <div>
-            <section>
+            <section >
                 <h2>Genres</h2>
-                <div className="filter">
-                    <button  >All</button>
+                <div className="filter" >
+                    {/* <button >All</button>
                     <button   >Action</button>
                     <button  >Cartoon</button>
                     <button >Comedy</button>
@@ -40,12 +39,12 @@ function Genres({ movies }) {
                     <button  >Drama</button>
                     <button  >History</button>
                     <button  >Sci-Fi</button>
-                    <button   >Thriller</button>
+                    <button   >Thriller</button> */}
                     {filteredButtons}
-                    {moviesFilteredByGenres}
+
                 </div>
             </section>
-            <MoviePage />
+
         </div>
     )
 }
