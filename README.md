@@ -61,7 +61,6 @@ Because I created a search input in the MovieList.js, I had to create a callback
 I used some CSS to style my app.
 
 
-![Doc11024_1](https://user-images.githubusercontent.com/110489643/218330859-be5643ed-60d2-4071-a9aa-779d5b1e248d.jpg)
 
 
 
